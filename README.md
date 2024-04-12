@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+# Universal React Template with Redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a universal template for building React applications with Redux state management. It provides a solid foundation with essential features such as Suspense for lazy loading, routing setup, 404 page handling, error boundary, Emotion CSS for styling, and a pre-configured Redux store.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Suspense for Lazy Loading**: Utilize React Suspense to lazy load components and improve application performance by dynamically loading resources only when needed.
 
-## Expanding the ESLint configuration
+- **Routing Setup**: Implement React Router for declarative routing, enabling navigation between different views and pages within the application.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **404 Page Handling**: Ensure a seamless user experience with a custom 404 page for handling routes that do not exist, providing clear feedback to users when they encounter a page not found.
 
-- Configure the top-level `parserOptions` property like this:
+- **Error Boundary**: Safeguard your application from crashing due to unexpected errors with an error boundary component that gracefully handles errors and displays a fallback UI.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Emotion CSS Styling**: Enhance the styling of your components with Emotion CSS, a popular CSS-in-JS library, offering a powerful and expressive way to style React components.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Redux Store Setup**: Configure a Redux store to manage application state, enabling predictable and centralized state management across components.
