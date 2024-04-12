@@ -1,6 +1,6 @@
 import { Dispatch, Middleware, UnknownAction } from "redux";
 
-const SAVE_DELAY = 1000;
+const SAVE_DELAY = 10_000;
 
 export const saveToLocalStorage: Middleware<
   object,
